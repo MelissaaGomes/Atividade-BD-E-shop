@@ -1,3 +1,4 @@
+
 drop table address;
 drop table bank_card;
 drop table brand;
@@ -111,8 +112,8 @@ addrid int NOT NULL PRIMARY KEY,
 fk_userid int NOT NULL, 
 nome varchar(50), 
 contactphonenumber varchar(20),
+province varchar(100),
 city varchar(50), 
-province varchar(100), 
 streetaddr varchar(100),
 postalcode char(12), 
 foreign key (fk_userid) references users (userid)
